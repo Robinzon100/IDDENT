@@ -1,4 +1,4 @@
-import { CSSProperties, MouseEventHandler, ReactNode } from 'react';
+import { CSSProperties, MouseEventHandler, ReactNode,  } from 'react';
 
 
 interface buttonProps {
@@ -69,7 +69,7 @@ const Button = ({
                 .button_container{
                     pointer-events: ${disabled && 'none'};
                     cursor: ${disabled ? 'not-allowed' : 'pointer'};
-                    padding: calc(${size} * .44vw) calc(${size} * .9vw);
+                    padding: calc(${size} * .44vw) calc(${size + 1} * .7vw);
                     border-radius: ${~~size * 6}px;
                     ${color == 'white' ? `
                         box-shadow: 0px 30px 19px -22px rgba(0, 0, 0, 0.1), inset 0px 0px 14px #FFFFFF;
@@ -86,16 +86,20 @@ const Button = ({
                     user-select: none;
                 }
 
+                /* @media screen and (max-width: ()) */
+
 
 
                 .button:focus { outline: none; }
                 .button:hover .button_container{
                     transform: translateY(-3%);
-                    ${color == 'white' && `
+                    ${color == 'white' ? `
                         backdrop-filter: blur(14px);
                         filter: saturation(20px);
-                        box-shadow: 0px 45px 50px -10px rgba(0, 0, 0, .28), inset 0px 0px 14px #FFFFFF !important;
-                    `}
+                        box-shadow: 0px 45px 50px -10px rgba(0, 0, 0, .28), inset 0px 0px 14px #FFFFFF !important;`
+                    : 
+                        `box-shadow: 0px 20px 40px -7px rgba(var(--RGB-${color}), 0.6);`}
+                        
                 }
 
                 .button:active .button_container{
@@ -103,7 +107,7 @@ const Button = ({
                     ${color == 'white' ? ` 
                         box-shadow: 0px 18px 25px -10px rgba(0, 0, 0, .35), inset 0px 0px 14px #FFFFFF !important;
                     `: `
-                        box-shadow: 0px 18px 25px -10px rgba(0, 0, 0, .35) !important;
+                        box-shadow: 0px 18px 25px -10px var(--{color}) !important;
                     `}
                 }
 
@@ -115,12 +119,12 @@ const Button = ({
 
 
 
-                @media screen and (max-width: 1000px) {
+                {@media screen and (max-width: 1000px) {
                     .button_container {
                         border-radius: ${~~size * 3.8}px;
-                        padding: calc(${size - 1.5} * 1.3vw) calc(${size - 1.5} * 2vw);
+                        padding: calc(${size + 1} * 1.3vw) calc(${size - 1.5} * 2vw);
                     }
-                }
+                }}
 
 
             `}</style>

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link'
-import { File, MessageSquare } from "react-feather";
+import {MessageSquare } from "react-feather";
 
 
 
@@ -29,7 +29,7 @@ const Navigation = () => {
                     <div className="logo" onClick={() => logoClickHandler()} />
 
                     <div className="links_container">
-                        <div className="link">
+                        {/* <div className="link">
                             <Link href='/paper' >
                                 <div className="link_container" data-icon='paper'>
                                     <File
@@ -42,7 +42,7 @@ const Navigation = () => {
                                     <a className='f-size-p3 f-weight-m'>paper.</a>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
                         <div className="link">
                             <Link href='/contact' >
                                 <div className="link_container" data-icon='contact'>

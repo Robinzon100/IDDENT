@@ -1,0 +1,46 @@
+.profile_content_main{
+    .container{
+        margin: 12vw 11.2vw;
+        width: 100%;
+
+        @media screen and (max-width: $medium) {
+            margin: 45vw auto 0 auto; 
+            width: 90%;
+
+            h1{
+                text-align: center;
+                font-size: $f-size-h1;
+            }
+
+        } 
+
+
+        h1,
+        .description{
+            margin: 0 0 4vw 0;
+        }
+
+
+        .description{
+            max-width: 45rem;
+            width: 90%;
+            
+        }
+
+        .buttons_container{
+            display: flex;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: $medium) {
+                margin-top: 4rem;
+                .button{
+                    width: 100% !important;
+                    margin-left: 0 !important;
+                    margin-bottom: 1rem;
+
+                }
+            }
+        }
+        
+    }
+}

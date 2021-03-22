@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { fixScrollToTop } from 'components/utils/animations/gsap.animations';
-import { fadeOutFadeIn } from '../../pages/landing/hero/utils/animations/hero.animations';
 import { facts } from './loading.content';
 const tl = gsap.timeline()
 
@@ -24,7 +23,6 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
     useEffect(() => {
         if (!isLoading) {
             removeLoadingScreen()
-            fadeOutFadeIn('.intro_video', ['.hero_title', '.scroll-down'])
         } 
     }, [isLoading])
 

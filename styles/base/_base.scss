@@ -61,6 +61,15 @@ body {
 
 }
 
+
+.main {
+    // padding-top: calc(5.1vw + 2.8rem);
+}
+
+
+
+
+
 b {
 
     background: linear-gradient(134.74deg, #00D1EA 9.43%, #F868EC 47.36%, #F98C2A 80.86%);
@@ -69,10 +78,10 @@ b {
     -ms-background-clip: text;
     -o-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-ms-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
     font-weight: $f-weight-black;
     display: inline-block;
 }

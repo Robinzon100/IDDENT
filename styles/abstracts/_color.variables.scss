@@ -6,35 +6,89 @@
    --dark-cyan: #0EB9CD;
    --cyan: #00D1EA;
    --light-cyan: #60E7F8;
-   
+
+   --dark-blue: #0062d6;
+   --blue: #0070f3;
+   --light-blue: rgb(40, 139, 255);
+   --lighter-blue: #5ea7fc;
+
    --lighter-green: #AAF5BB;
    --dark-green: #2CDE55;
    --green: #56F97B;
    --light-green: #89F3A1;
-   
+
    --lighter-red: #F499A9;
    --dark-red: #C92946;
    --red: #F94D6C;
    --light-red: #F56C85;
-   
+
    --lighter-orange: #F5BF8E;
    --dark-orange: #D27017;
    --orange: #F98C2A;
    --light-orange: #F6A65D;
-   
+
    --dark-purple: #D336C6;
    --purple: #F868EC;
    --light-purple: #F59FEE;
    --lighter-purple: #F4CCF1;
-   
+
    --lightest-grey: #F6F6F6;
    --dark-grey: #D2D2D9;
    --grey: #E8E9EF;
    --light-grey: #EFF0F2;
-   
+
    --dark-black: #000000;
    --black: #0D0D0E;
-   --light-dark: #222227;
-   --lighter-dark: #5C5C62;
+   --light-black: #222227;
+   --lighter-black: #5C5C62;
+
+
+
+
+
+
+
+   --RGB-bg: 245, 245, 245;
+   --RGB-white: 255, 255, 255;
+
+   --RGB-lighter-cyan: 165, 236, 245;
+   --RGB-dark-cyan: 14, 185, 205;
+   --RGB-cyan: 0, 209, 234;
+   --RGB-light-cyan: 96, 231, 248;
+
+   --RGB-dark-blue: 0, 98, 214;
+   --RGB-blue: 0, 112, 243;
+   --RGB-light-blue: 40, 139, 255;
+   --RGB-lighter-blue: 94, 167, 252;
+
+   --RGB-lighter-green: 170, 245, 187;
+   --RGB-dark-green: 44, 222, 85;
+   --RGB-green: 86, 249, 123;
+   --RGB-light-green: 137, 243, 161;
+
+   --RGB-lighter-red: 244, 153, 169;
+   --RGB-dark-red: 201, 41, 70;
+   --RGB-red: 249, 77, 108;
+   --RGB-light-red: 245, 108, 133;
+
+   --RGB-lighter-orange: 245, 191, 142;
+   --RGB-dark-orange: 210, 112, 23;
+   --RGB-orange: 249, 140, 42;
+   --RGB-light-orange: 246, 166, 93;
+
+   --RGB-dark-purple: 211, 54, 198;
+   --RGB-purple: 248, 104, 236;
+   --RGB-light-purple: 245, 159, 238;
+   --RGB-lighter-purple: 244, 204, 241;
+
+   --RGB-lightest-grey: 246, 246, 246;
+   --RGB-dark-grey: 210, 210, 217;
+   --RGB-grey: 232, 233, 239;
+   --RGB-light-grey: 239, 240, 242;
+
+   --RGB-dark-black: 0, 0, 0;
+   --RGB-black: 13, 13, 14;
+   --RGB-light-black: 34, 34, 39;
+   --RGB-lighter-black: 92, 92, 98;
 
 }

@@ -1,6 +1,6 @@
 .navigation {
-    background: linear-gradient(white 30%, rgba(255, 255, 255, 0));
-    
+    // background: linear-gradient(white 10%, rgba(255, 255, 255, 0));
+
 
 
     .link_container:hover .paper_icon path {
@@ -21,7 +21,6 @@
 
 
 .navigation {
-    opacity: 0;
     position: fixed;
     z-index: 99;
     width: 100vw;
@@ -34,22 +33,34 @@
 
 
     .container {
-        padding: calc(2.5vw + 1rem) 7.5vw;
+        // padding: calc(2.5vw + 1rem) 11vw;
+        padding: calc(1.5vw + 1rem) 0;
+        margin: 0 11.2vw;
+        // max-width: 93rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
+
+        @media screen and (max-width: $medium) {
+            margin: 0 auto !important;
+            width: 90%;
+        }
     }
 
 
     .logo {
         width: 25%;
-        height: calc(1.1vw + 2.8rem);
-        background-image: url('/images/png/logo.png');
+        height: calc(4.7vw + 2.8rem);
+        background-image: url('/svg/logo.svg');
         background-size: contain;
         background-position: left center;
         background-repeat: no-repeat;
         cursor: pointer;
+
+        @media screen and (max-width: $medium) {
+             height: calc(7.7vw + 2.8rem);
+        }
     }
 
 
